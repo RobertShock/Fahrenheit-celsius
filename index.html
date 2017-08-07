@@ -3,17 +3,17 @@
 	<head>
 		<title>Temperature Converter</title>
 	</head>
-	<style type="text/css" main.css></style>
+	<link rel="stylesheet" type="text/css" href="main.css">
 	<body>
-		<center>
-		<h2>Convert temp from fahrenheit to celsius or celsius to fahrenheit:</h2>
-			<form>Fahrenheit: 
-				<input type="text" name="fahr" size=6> &nbsp;&nbsp;&nbsp;&nbsp;Celsius: 
-				<input type="text" name="cels" size=6><br /><br />
-				<input type="button" name="converter" value="Convert Temperature" onClick="tempConversion(this.form)">
-				<input type="button" name="wiper" value="Clear Entries" onClick="wipe(this.form)">
+		<h2>Convert Temp From Fahrenheit To Celsius Or Celsius To Fahrenheit:</h2>
+			<form id="myForm">Temp To Convert: 
+				<input type=text id=temp><br>
+				<input type="radio" name="tempButton" id=ctof value="to °F">Convert to Fahrenheit<br> 
+				<input type="radio" name="tempButton" id=ctof2 value="to °C">Convert to Celsius<br>
+				<input type="button" name="convertButton" id=convert
+				<output></output>
+				<input type="button" onclick="clearForm()" value="Clear All Fields"><br />
 			</form>
-		</center>
 		<script type="text/javascript" src="main.js"></script>
 	</body>
 </html>

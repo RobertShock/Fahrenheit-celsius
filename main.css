@@ -1,3 +1,9 @@
-.body {
+body {
+    display: block;
+    text-align: center;
+}
+
+body {
 	background-color: lightgray;
-	}
+}
+
